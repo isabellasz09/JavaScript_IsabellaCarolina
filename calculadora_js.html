@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+        function soma() {
+            var v1 = parseInt(prompt("Digite um Número: "));
+            var v2 = parseInt(prompt("Digite outro Número: "));
+
+            total = v1 + v2
+            document.getElementById("result").innerHTML = result;
+        }
+
+        function multiplicação() {
+            var v1 = parseInt(prompt("Digite um Número: "));
+            var v2 = parseInt(prompt("Digite outro Número: "));
+
+            total = v1 * v2
+            document.getElementById("result").innerHTML = result;
+        }
+
+        function divisão() {
+            var v1 = parseInt(prompt("Digite um Número: "));
+            var v2 = parseInt(prompt("Digite outro Número: "));
+
+            total = v1 / v2
+            document.getElementById("result").innerHTML = result;
+        }
+
+        function suntração() {
+            var v1 = parseInt(prompt("Digite um Número: "));
+            var v2 = parseInt(prompt("Digite outro Número: "));
+
+            total = v1 - v2
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+</head>
+
+<body>
+    <p>Escolha uma operação</p>
+    <button onclick="soma()">Soma</button>
+    <button onclick="multiplicação()">Multiplicação</button>
+    <button onclick="divisão()">Divisão</button>
+    <button onclick="suntração()">Subtração</button>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled 5</title>
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        function myfunction() {
+            var x;
+            var idade = prompt("Digite sua idade");
+            if (idade != null) {
+                x = "idade:" + idade + "anos.";
+                document.getElementById("demo").innerHTML = x;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <p>Clique para exibir.</p>
+    <button onclick="myfunction()">Clique aqui</button>
+    <p id="demo"></p>
+</body>
+
+</html>
