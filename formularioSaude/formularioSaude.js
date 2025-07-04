@@ -40,3 +40,16 @@ function cep(variavel){
     variavel=variavel.replace(/(\d{3})(\d)/,"$1-$2") 
     return variavel
 }
+
+function cartaosus(variavel){
+    variavel=variavel.replace(/\D/g,"")
+    variavel=variavel.replace(/(\d{6})(\d)/,"$1-$2") 
+    return variavel
+}
+
+function data(variavel){
+    variavel=variavel.replace(/\D/g,"")//remove caracteres não numericos
+    variavel=variavel.replace(/(\d{2})(\d)/,"$1/$2") 
+    variavel=variavel.replace(/(\d{2})(\d)/,"$1/$2") 
+    return variavel
+}
